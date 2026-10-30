@@ -1,10 +1,13 @@
-def student_info(name="Shantnu", college="RIT Roorkee"):
-    print("Name:", name)
-    print("College:", college)
 
+import os
+from dotenv import load_dotenv
 
-student_info()
+load_dotenv()
 
-print()
+name = os.getenv("STUDENT_NAME")
+college = os.getenv("COLLEGE")
+goal = os.getenv("GOAL")
 
-student_info("Rahul", "IIT Delhi")
+print("Name:", name)
+print("College:", college)
+print("Goal:", goal)
