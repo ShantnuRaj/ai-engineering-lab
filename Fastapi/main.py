@@ -8,4 +8,4 @@ def hello():
 
 @app.get('/about')
 def about():
-    return {'message': 'Hlo my name is Shantnu Raj'}
+    return {'message': 'Hlo my name is Shantnu Raj '}
